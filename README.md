@@ -1,13 +1,19 @@
 # YogaMomen2
-THIS IS FOR THE 2024 MEGATHON Qualcomm problem:
 
-This is the second iteration of trying to make the pose detection work along with the yoga poses.
-    1. Made a python script to convert some labelled data of 3 poses of surya namaskar to a tflite model which could be loaded in the app.
-    2. Used the templates from the first trial -> https://github.com/aryanmeh624/YogaMomen1. This time with 2 models one for detecting poses and other for checking the siilarityu between detected pose.
+**Description:**  
+YogaMomen2 is the second iteration of an application developed for the 2024 MEGATHON Qualcomm problem, focusing on yoga pose detection and classification.
 
-#Current Problems
-The setup took a lot of the time and kept failing build because of some old outdated libraries used. 
+## Features
+1. **Pose Detection:** Utilizes the open-source Movenet Thunder model for detecting yoga poses.
+2. **Pose Classification:** A custom TFLite model (`pose_classifier.tflite`), created using a Python script on Google Colab, for classifying poses.
 
-#requirements
-Uses the open source model: Movenet Thunder model in order to immplement the pose detection
-The other tflite mdoel in teh assets is the pose_classifier.tft which was SELF MADE from sratch using python script on google collab.
+## Progress
+1. Created a Python script to convert labeled data of three Surya Namaskar poses to a TFLite model, which can be loaded into the app.
+2. Leveraged templates from the first trial [YogaMomen1](https://github.com/aryanmeh624/YogaMomen1), now with two models: one for detecting poses and another for checking the similarity between detected poses.
+
+## Current Issues
+- The setup process was time-consuming and encountered build failures due to outdated libraries.
+
+## Requirements
+- **Pose Detection Model:** Movenet Thunder model.
+- **Pose Classification Model:** `pose_classifier.tflite`, a self-made model created from scratch using a Python script on Google Colab.
